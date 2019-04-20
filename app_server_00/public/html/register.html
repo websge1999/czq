@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="login1">
+        <div class="login2">
+            <div class="login3">
+                <div><a href="javascript:;" class="text-right">&lt;&lt;返回</a></div>
+                <div class="loninInput">
+                    <table></table>
+                    <h1 class="loginImg mb-1"><img src="../img/logo.png" alt=""/></h1>
+                    <!-- 用户名-->
+                    <div class="input mt-2">
+                        <div class="d-inline-block mt-3">
+                            <span class="text-center">用户名:</span>
+                        </div>
+                        <div class="d-inline-block">
+                            <input type="text" placeholder="请输入用户名" class="inputI" id="uname">
+                        </div>
+                    </div>
+                    <!-- 密码-->
+                    <div class="input mt-2">
+                        <div class="d-inline-block mt-2">
+                            <span class="text-center">登录密码</span>
+                        </div>
+                        <div class="d-inline-block">
+                            <input type="password" placeholder="请输入密码" class="inputI" id="upwd">
+                        </div>
+                    </div>
+                    <!-- 确认密码-->
+                    <div class="input mt-2">
+                        <div class="d-inline-block mt-2">
+                            <span class="text-center">确认密码:</span>
+                        </div>
+                        <div class="d-inline-block">
+                            <input type="password" placeholder="请再次输入密码" class="inputI">
+                        </div>
+                    </div>
+                    <!-- 邮箱-->
+                    <div class="input mt-2">
+                        <div class="d-inline-block mt-2">
+                            <span class="text-center">邮箱:</span>
+                        </div>
+                        <div class="d-inline-block">
+                            <input type="text" placeholder="请输入你的邮箱" class="inputI" id="email">
+                        </div>
+                    </div>
+                    <!-- 手机号-->
+                    <div class="input mt-2">
+                        <div class="d-inline-block mt-2">
+                            <span class="text-center">手机号:</span>
+                        </div>
+                        <div class="d-inline-block">
+                            <input type="text" placeholder="请输入你的手机号" class="inputI" id="phone">
+                        </div>
+                    </div>
+                    <!-- 隐私保护协议-->
+                    <div class="mt-3 mb-1">
+                        <span>
+                            <input type="checkbox">
+                        </span>
+                        <span>
+                            <a href="javascript:;" >
+                                我已阅读、了解并接受《<span>阿里文学用户服务协议》</span>、
+                                <span>《隐私保护政策》</span>
+                            </a>
+                        </span>
+                    </div>
+                    <!-- 提交按钮-->
+                    <input type="submit" value="提交注册" disabled class="btn buttonS" id='register'>
+                </div>
+            </div>
+            <div class="loginBottom">
+                <span class="mr-2">©广州阿里巴巴文学信息技术有限公司2015</span>
+                <a href="javascript:;" class="mr-2">关于我们</a>
+                <span>|</span>
+                <a href="javascript:;" class="mr-2" >投稿声明</a>
+                <span>|</span>
+                <a href="javascript:;" class="mr-2">版权声明</a>
+                <span>|</span>
+                <a href="javascript:;" class="mr-2">联系我们</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var $chb=$(":checkbox");
+    $chb.click(function(){
+        var $chb=$(this);//获得当前chb
+        var $inputs=$(":input:not(:checkbox)")
+        $inputs.prop(
+                "disabled",!$chb.is(":checked"))
+    })
+</script>
+<script src="../js/jquery-1.11.3.js"></script>
+<script src="../js/register.js"></script>
+</body>
+</html>

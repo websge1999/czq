@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container-fluid{
+    padding-left:0 !important;
+    padding-right:0 !important;
+}
+.top{
+    border-top: 1px solid #f37529;
+}
+body{
+    color:#333;
+    background: #fff;
+    font-size: 12px;
+}
+.topLog{
+    margin: 32px auto;
+    
+}
+.topnavcenter{
+    height: 72px;
+    margin:0 auto;
+    line-height: 72px;
+    width: 100%;
+}
+.topnav ul li a{
+    font-size: 16px;
+    font-weight: 700;
+    color:#000;
+}
+.topnav ul li .active{
+    color:#f37529;
+}
+.topnav ul li :hover{
+    color:#f37529;
+    text-decoration: none;
+}
+.topnav ul li{
+    width:110px;
+}
